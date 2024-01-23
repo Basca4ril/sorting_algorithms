@@ -52,7 +52,7 @@ void quick_sorter(int *array, int low, int high, size_t size)
 	if (low < high)
 	{
 		idx = lomuto(array, low, high, size);
-		quick_sorter(array, low, idx -1, size);
+		quick_sorter(array, low, idx - 1, size);
 		quick_sorter(array, idx + 1, high, size);
 	}
 }
